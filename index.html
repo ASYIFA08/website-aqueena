@@ -1,0 +1,121 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Layout HTML</title>
+    <style>
+        /* Mengatur gaya untuk body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #111;
+        }
+
+        /* Main content area */
+        main {
+            flex: 1;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        /* Sidebar */
+        aside {
+            background-color: #f9f9f9;
+            padding: 20px;
+            width: 25%;
+            float: right;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Clearfix untuk mengatasi masalah floating */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BIOGRAFI AQUENNA</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://www.instagram.com/rattuuu_27" target="_blank">Instagram</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="https://wa.me/62895327218910" target="_blank">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="clearfix">
+        <section>
+            <h2>Tentang Aquenna</h2>
+            <p>aqueena talita zalfa atau sering di panggil ratu adalah siswa smkn 6 kota tangerang selatan. ratu lahir 27 juni 2008. </p>
+            <img src="/IMG_20240420_154202_723.jpg" width="240px" height="250px">
+        </section>
+
+        <aside>
+            <h2>MAKANAN FAVORIT</h2>
+            <p>BAKSO, NASI PADANG, GACOAN</p>""
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Website Saya. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+``
